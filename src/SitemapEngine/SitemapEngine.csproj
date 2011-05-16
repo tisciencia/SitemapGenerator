@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5AE4E678-B999-4820-9D3D-53AD84DE0B48}</ProjectGuid>
+    <ProjectGuid>{B3D25416-58D2-4CC0-BABA-E6E3E707CE70}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SitemapGenerator</RootNamespace>
-    <AssemblyName>SitemapGenerator</AssemblyName>
+    <RootNamespace>Sitemap.Engine</RootNamespace>
+    <AssemblyName>Sitemap.Engine</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,6 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SitemapEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SitemapModel\SitemapModel.csproj">
+      <Project>{5AE4E678-B999-4820-9D3D-53AD84DE0B48}</Project>
+      <Name>Sitemap.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
